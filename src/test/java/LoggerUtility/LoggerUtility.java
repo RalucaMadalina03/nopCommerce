@@ -1,6 +1,8 @@
 package LoggerUtility;
 
 
+import org.testng.log4testng.Logger;
+
 public class LoggerUtility {
     private static String suiteLogsPath = "target/logs/suite/";
 

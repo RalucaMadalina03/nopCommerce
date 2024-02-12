@@ -1,6 +1,11 @@
 package ShareData.Browser;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
+import java.time.Duration;
+import java.util.HashMap;
 
 public class FirefoxBrowserService extends BaseBrowserService implements BrowserService {
 

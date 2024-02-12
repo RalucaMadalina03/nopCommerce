@@ -2,6 +2,8 @@ package Tests;
 
 import ObjectData.RegisterPageObj;
 import Pages.HomePage;
+import Pages.Register.MyAccount.*;
+import Pages.Register.RegisterPage;
 import ShareData.Hooks;
 import org.testng.annotations.Test;
 
@@ -16,18 +18,18 @@ public class RegisterAuthTest extends Hooks {
         homePage.registerInterract();
 
         RegisterPage registerPage = new RegisterPage(getDriver());
-        registerPage.fillRegisterForm(registerPageObject);
-        registerPage.logInAccount(registerPageObject);
+        registerPage.fillRegisterForm(registerPageObj);
+        registerPage.logInAccount(registerPageObj);
         homePage.myAccountInterract();
 
         MyAccountPage myAccountPage = new MyAccountPage(getDriver());
-        myAccountPage.validateCustomerInfo(registerPageObject);
+        myAccountPage.validateCustomerInfo(registerPageObj);
         myAccountPage.addressesnterract();
 
         AddressesPage addressesPage = new AddressesPage(getDriver());
-        addressesPage.validateNoAddress(registerPageObject);
+        addressesPage.validateNoAddress(registerPageObj);
         addressesPage.addNewInterract();
-        addressesPage.fillNewAddressForm(registerPageObject);
+        addressesPage.fillNewAddressForm(registerPageObj);
         addressesPage.validateUpdatedAddresses();
         myAccountPage.ordersInterract();
 
@@ -52,11 +54,11 @@ public class RegisterAuthTest extends Hooks {
         myAccountPage.changePasswordInterract();
 
         ChangePasswordPage changePasswordPage = new ChangePasswordPage(getDriver());
-        changePasswordPage.createNewPasswordMethod(registerPageObject);
+        changePasswordPage.createNewPasswordMethod(registerPageObj);
         changePasswordPage.validateNewPassword();
         changePasswordPage.logoutSession();
 
-        registerPage.logInAccountWithNewCredentials(registerPageObject);
+        registerPage.logInAccountWithNewCredentials(registerPageObj );
         myAccountPage.validateTitlePresent();
     }
 }
