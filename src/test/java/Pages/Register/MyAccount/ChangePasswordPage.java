@@ -1,9 +1,7 @@
 package Pages.Register.MyAccount;
-
+import LoggerUtility.LoggerUtility;
 import ObjectData.RegisterPageObj;
 import Pages.BasePage;
-import ShareData.Browser.BaseBrowserService;
-import ShareData.Browser.BrowserService;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

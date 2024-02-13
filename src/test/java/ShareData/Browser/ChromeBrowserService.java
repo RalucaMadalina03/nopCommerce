@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 import java.util.HashMap;
-
+import LoggerUtility.LoggerUtility;
 public class ChromeBrowserService extends BaseBrowserService implements BrowserService{
     private WebDriver driver;
 

@@ -1,15 +1,23 @@
 package LoggerUtility;
 
 
-import org.testng.log4testng.Logger;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.PrintWriter;
 
 public class LoggerUtility {
     private static String suiteLogsPath = "target/logs/suite/";
 
     private static String regressionLogsPath = "target/logs/";
 
+    //private static Logger logger = LogManager.getLogger();
     private static Logger logger = LogManager.getLogger();
-
     public static synchronized void startTestCase(String testName) {
 
         ThreasContext.put("threadName", testName);

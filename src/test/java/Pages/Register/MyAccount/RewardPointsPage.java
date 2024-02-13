@@ -1,5 +1,5 @@
 package Pages.Register.MyAccount;
-
+import LoggerUtility.LoggerUtility;
 import Pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
