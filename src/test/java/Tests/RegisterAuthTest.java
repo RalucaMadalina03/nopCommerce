@@ -24,7 +24,7 @@ public class RegisterAuthTest extends Hooks {
 
         MyAccountPage myAccountPage = new MyAccountPage(getDriver());
         myAccountPage.validateCustomerInfo(registerPageObj);
-        myAccountPage.addressesnterract();
+        myAccountPage.addressesinterract();
 
         AddressesPage addressesPage = new AddressesPage(getDriver());
         addressesPage.validateNoAddress(registerPageObj);

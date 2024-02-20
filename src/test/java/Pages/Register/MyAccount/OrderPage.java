@@ -15,7 +15,7 @@ public class OrderPage extends BasePage {
 
     public void validateNoOrders(){
         elementMethods.validateMessage(noOrders,"No orders");
-        LoggerUtility.info("The no orders message has been validated with succes.");
+        LoggerUtility.info("The no orders message has been validated with success.");
     }
 
 }

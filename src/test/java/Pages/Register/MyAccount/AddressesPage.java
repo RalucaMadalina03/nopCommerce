@@ -34,17 +34,17 @@ public class AddressesPage extends BasePage {
     private WebElement phoneNumber;
     @FindBy(xpath = "//button[@type='submit' and contains(text(),'Save')]")
     private WebElement saveButton;
-    @FindBy(xpath = "//strong[contains(text(),'Georgian Adetu')]")
+    @FindBy(xpath = "//strong[contains(text(),'Tudor Serban')]")
     private WebElement titleName;
     @FindBy(xpath = "//li[@class='name'][text()='Georgian Adetu']")
     private WebElement addressesNameOwner;
-    @FindBy(xpath = "//li[contains(., 'new_boy919@yahoo.com')]")
+    @FindBy(xpath = "//li[contains(., 'tud_dud@yahoo.com')]")
     private WebElement newEmailUpdated;
-    @FindBy(xpath ="//li[contains(., '0771702457')]")
+    @FindBy(xpath ="//li[contains(., '0778878673')]")
     private WebElement newPhoneNumberUpdated;
-    @FindBy(xpath = "//li[contains(., 'Str. Oborului, Bl. AB4')]")
+    @FindBy(xpath = "//li[contains(., 'Str. clujului')]")
     private WebElement newAddress1;
-    @FindBy(xpath = "//li[contains(., 'Constanta, 810563')]")
+    @FindBy(xpath = "//li[contains(., 'timisoara, 78321')]")
     private WebElement newCityAndZip;
 
     public void validateNoAddress(RegisterPageObj registerPageObj){

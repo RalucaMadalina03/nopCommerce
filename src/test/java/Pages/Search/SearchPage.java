@@ -82,7 +82,7 @@ public class SearchPage extends BasePage {
     @FindBy(css = "div[class='no-result']")
     private WebElement noProductFoundMessage;
 
-    public void validateSeachesSuggestions(SearchObj searchObj) {
+    public void validateSearchesSuggestions(SearchObj searchObj) {
         elementMethods.clickElement(searchBox);
         LoggerUtility.info("The user is clicking on search box.");
         elementMethods.fillElement(searchBox, searchObj.getSearchBoxInput(), firstSearchResult);

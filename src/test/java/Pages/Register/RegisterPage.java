@@ -56,7 +56,7 @@ public class RegisterPage extends BasePage {
         elementMethods.clickElement(registerButton);
         LoggerUtility.info("The user clicks on Register button.");
         elementMethods.validatePresenceElement(successRegisterMessage);
-        LoggerUtility.info("The succesful register message has been validated with success.");
+        LoggerUtility.info("The successful register message has been validated with success.");
         elementMethods.clickElement(continueButton);
         LoggerUtility.info("The user clicks on Continue button.");
     }

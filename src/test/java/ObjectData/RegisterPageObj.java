@@ -141,7 +141,7 @@ public class RegisterPageObj {
                 case "password":
                     setPassword(testData.get(Key));
                     break;
-                case "noAddressMesage":
+                case "noAddressMessage":
                     setNoAddressMesage(testData.get(Key));
                     break;
                 case "newFirstName":

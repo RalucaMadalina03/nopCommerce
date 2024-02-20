@@ -43,7 +43,7 @@ public class MyAccountPage extends BasePage {
         LoggerUtility.info("The email field value has been validated with success.");
     }
 
-    public void addressesnterract(){
+    public void addressesinterract(){
         elementMethods.clickElement(addresses);
         LoggerUtility.info("The user clicks on Addresses.");
     }

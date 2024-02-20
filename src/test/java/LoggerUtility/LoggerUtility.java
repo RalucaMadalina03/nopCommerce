@@ -5,6 +5,7 @@ package LoggerUtility;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,11 +17,10 @@ public class LoggerUtility {
 
     private static String regressionLogsPath = "target/logs/";
 
-    //private static Logger logger = LogManager.getLogger();
     private static Logger logger = LogManager.getLogger();
-    public static synchronized void startTestCase(String testName) {
 
-        ThreasContext.put("threadName", testName);
+    public static synchronized void startTestCase(String testName) {
+        ThreadContext.put("threadName", testName);
         logger.info("====================================== Execution started : " + testName + "================================================");
     }
 
