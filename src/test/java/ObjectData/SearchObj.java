@@ -6,11 +6,11 @@ public class SearchObj {
 
     private String searchBoxInput;
 
-    private String product1Title;
+    private String product1Name;
 
-    private String product2Title;
+    private String product2Name;
 
-    private String product3Title;
+    private String product3Name;
 
     private String url;
 
@@ -50,28 +50,28 @@ public class SearchObj {
         this.url = url;
     }
 
-    public String getProduct3Title() {
-        return product3Title;
+    public String getProduct3Name() {
+        return product3Name;
     }
 
-    public void setProduct3Title(String product3Title) {
-        this.product3Title = product3Title;
+    public void setProduct3Name(String product3Name) {
+        this.product3Name = product3Name;
     }
 
-    public String getProduct2Title() {
-        return product2Title;
+    public String getProduct2Name() {
+        return product2Name;
     }
 
-    public void setProduct2Title(String product2Title) {
-        this.product2Title = product2Title;
+    public void setProduct2Name(String product2Name) {
+        this.product2Name = product2Name;
     }
 
-    public String getProduct1Title() {
-        return product1Title;
+    public String getProduct1Name() {
+        return product1Name;
     }
 
-    public void setProduct1Title(String product1Title) {
-        this.product1Title = product1Title;
+    public void setProduct1Name(String product1Name) {
+        this.product1Name = product1Name;
     }
 
     public String getSearchBoxInput() {
@@ -92,14 +92,14 @@ public class SearchObj {
                 case "searchBoxInput":
                     setSearchBoxInput(testData.get(Key));
                     break;
-                case "product1Title":
-                    setProduct1Title(testData.get(Key));
+                case "product1Name":
+                    setProduct1Name(testData.get(Key));
                     break;
-                case "product2Title":
-                    setProduct2Title(testData.get(Key));
+                case "product2Name":
+                    setProduct2Name(testData.get(Key));
                     break;
-                case "product3Title":
-                    setProduct3Title(testData.get(Key));
+                case "product3Name":
+                    setProduct3Name(testData.get(Key));
                     break;
                 case "url":
                     setUrl(testData.get(Key));

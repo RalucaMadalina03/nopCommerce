@@ -12,7 +12,7 @@ public class RegisterPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(id = "gender-male")
+    @FindBy(id = "gender-female")
     private WebElement gender;
     @FindBy(id = "FirstName")
     private WebElement firstName;
@@ -40,7 +40,7 @@ public class RegisterPage extends BasePage {
 
     public void fillRegisterForm(RegisterPageObj registerPageObj){
         elementMethods.clickElement(gender);
-        LoggerUtility.info("The user ticks the male gender box.");
+        LoggerUtility.info("The user ticks the female gender box.");
         elementMethods.fillElement(firstName,registerPageObj.getFirstName());
         LoggerUtility.info("The user fills first name field with value : "+registerPageObj.getFirstName());
         elementMethods.fillElement(lastName,registerPageObj.getLastName());

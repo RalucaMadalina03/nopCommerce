@@ -83,17 +83,17 @@ public class ElementMethods {
         for (WebElement image : sliderImages) {
             String srcAttribute = image.getAttribute("src");
             if (srcAttribute.contains("banner_01")) {
-                return; // Ieșim din metoda în cazul găsirii "banner_01"
+                return;
             }
         }
-        // Dacă nu găsim "banner_01", continuăm căutarea pentru "banner_02"
+
         for (WebElement image : sliderImages) {
             String srcAttribute = image.getAttribute("src");
             if (srcAttribute.contains("banner_02")) {
-                return; // Ieșim din metoda în cazul găsirii "banner_02"
+                return;
             }
         }
-        // Dacă ajungem aici, înseamnă că nu am găsit nicio imagine așteptată
+
         Assert.fail("No image named: banner_01 or banner_02 has been found in slider");
     }
 

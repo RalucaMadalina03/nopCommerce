@@ -36,7 +36,7 @@ public class AddressesPage extends BasePage {
     private WebElement saveButton;
     @FindBy(xpath = "//strong[contains(text(),'Tudor Serban')]")
     private WebElement titleName;
-    @FindBy(xpath = "//li[@class='name'][text()='Georgian Adetu']")
+    @FindBy(xpath = "//li[@class='name'][text()='Tudor Serban']")
     private WebElement addressesNameOwner;
     @FindBy(xpath = "//li[contains(., 'tud_dud@yahoo.com')]")
     private WebElement newEmailUpdated;

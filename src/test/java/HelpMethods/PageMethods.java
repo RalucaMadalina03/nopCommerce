@@ -32,7 +32,7 @@ public class PageMethods {
         driver.navigate().back();
     }
 
-    public void accesUrl(String urlValue) {
+    public void accessUrl(String urlValue) {
         driver.navigate().to(urlValue);
     }
 }

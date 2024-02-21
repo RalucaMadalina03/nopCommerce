@@ -46,7 +46,7 @@ public class LoggerUtility {
     public static void mergeLogsIntoOne(){
         File dir = new File(suiteLogsPath);
 
-        // Get list of all the files in form of String Array
+
         String[] fileNames = dir.list();
 
         try {

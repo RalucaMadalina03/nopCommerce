@@ -23,7 +23,7 @@ public class SearchPage extends BasePage {
     private WebElement productElement;
 
     @FindBy(xpath = "//h2/a[contains(text(),'5.0 Lollipop')]")
-    // identificare dupa textul hardcodat(lung),cautand doar 2 cuvinte din acesta, dar am coborat din <h2 pentru ca imi dadea 1/2 din cauza la recent searches
+
     private WebElement product1;
 
     @FindBy(xpath = "//h2/a[contains(text(),'Mini Blue')]")
@@ -33,19 +33,19 @@ public class SearchPage extends BasePage {
     private WebElement product3;
 
     @FindBy(xpath = "//h1[contains(text(),'5.0 Lollipop')]")
-    private WebElement product1Title;
+    private WebElement product1Name;
 
     @FindBy(id = "main-product-img-18")
     private WebElement product1image;
 
     @FindBy(xpath = "//h1[contains(text(),'Mini Blue')]")
-    private WebElement product2Title;
+    private WebElement product2Name;
 
     @FindBy(id = "main-product-img-19")
     private WebElement product2image;
 
     @FindBy(xpath = "//h1[contains(text(),'Lumia 1020')]")
-    private WebElement product3Title;
+    private WebElement product3Name;
 
     @FindBy(id = "main-product-img-20")
     private WebElement product3image;
@@ -87,7 +87,7 @@ public class SearchPage extends BasePage {
         LoggerUtility.info("The user is clicking on search box.");
         elementMethods.fillElement(searchBox, searchObj.getSearchBoxInput(), firstSearchResult);
         LoggerUtility.info("The user enters the value: " + searchObj.getSearchBoxInput() + " then clicks on the first result of the suggestions.");
-        elementMethods.validateMessage(firstSearchResultTitle, searchObj.getProduct1Title());
+        elementMethods.validateMessage(firstSearchResultTitle, searchObj.getProduct1Name());
         LoggerUtility.info("The user product's title has been validated.");
         pageMethods.clickBack();
         LoggerUtility.info("The user returns to previous page.");
@@ -111,7 +111,7 @@ public class SearchPage extends BasePage {
     }
 
     public void validateProduct1(SearchObj searchObject) {
-        elementMethods.validateMessage(product1Title, searchObject.getProduct1Title());
+        elementMethods.validateMessage(product1Name, searchObject.getProduct1Name());
         LoggerUtility.info("The product's name has been validated with success.");
         elementMethods.validatePresenceElement(product1image);
         LoggerUtility.info("The image of this product has been validated with success.");
@@ -125,7 +125,7 @@ public class SearchPage extends BasePage {
     }
 
     public void validateProduct2(SearchObj searchObject) {
-        elementMethods.validateMessage(product2Title, searchObject.getProduct2Title());
+        elementMethods.validateMessage(product2Name, searchObject.getProduct2Name());
         LoggerUtility.info("The product's name has been validated with success.");
         elementMethods.validatePresenceElement(product2image);
         LoggerUtility.info("The image of this product has been validated with success.");
@@ -139,7 +139,7 @@ public class SearchPage extends BasePage {
     }
 
     public void validateProduct3(SearchObj searchObj) {
-        elementMethods.validateMessage(product3Title, searchObj.getProduct3Title());
+        elementMethods.validateMessage(product3Name, searchObj.getProduct3Name());
         LoggerUtility.info("The product's name has been validated with success.");
         elementMethods.validatePresenceElement(product3image);
         LoggerUtility.info("The image of this product has been validated with success.");
@@ -148,7 +148,7 @@ public class SearchPage extends BasePage {
     }
 
     public void accessURL(SearchObj searchObject) {
-        pageMethods.accesUrl(searchObject.getUrl());
+        pageMethods.accessUrl(searchObject.getUrl());
         LoggerUtility.info("The user accesses following URL: " + searchObject.getUrl() + " .");
     }
 

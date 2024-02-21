@@ -14,7 +14,7 @@ public class ProductCartPage extends BasePage {
     @FindBy(xpath = "//div[@data-productid='16']//button[contains(@class,'product-box-add-to-cart-button')]")
     private WebElement addtoCartThirdProduct;
     @FindBy(css = "p[class='content']")
-    private WebElement succesMessage;
+    private WebElement successMessage;
     @FindBy(css = "span[class='close']")
     private WebElement close;
     @FindBy(css = "span[class='cart-label']")
@@ -41,7 +41,7 @@ public class ProductCartPage extends BasePage {
     public void addToCart(){
         elementMethods.clickElement(addtoCartThirdProduct);
         LoggerUtility.info("The user adds to cart third product on the page.");
-        elementMethods.validatePresenceElement(succesMessage);
+        elementMethods.validatePresenceElement(successMessage);
         LoggerUtility.info("The item has been added to cart and successful message has been displayed.");
         elementMethods.clickElement(close);
         LoggerUtility.info("The user closes the displayed message.");
@@ -61,7 +61,7 @@ public class ProductCartPage extends BasePage {
         elementMethods.clickElement(applyCoupon);
         LoggerUtility.info("The user clicks on APPLY COUPON.");
         elementMethods.validatePresenceElement(failureCouponMessage);
-        LoggerUtility.info("The failure message for coupons is displayed: "+failureCouponMessage.getText()+" .");
+        LoggerUtility.info("The failure message for coupons is displayed: " + failureCouponMessage.getText()+" .");
         elementMethods.validatePresenceElement(updatedPriceGiftWrap);
         LoggerUtility.info("The updated total price with gift wrap option has been validated with success.");
     }
